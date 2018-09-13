@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Company</title>
+  <meta name="description" content="h5bp,bootstrap,Ang">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <style>
+	.picsmall {
+		max-height:300px;
+	}
+	ul.social {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-align: center
+	}
+	ul.social li {
+		display: inline-block;
+	}
+	ul.social a {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 30px;
+		border-radius: 36px;
+		background-color: @gray-light;
+		color: #fff;
+		margin: 0 3px 3px 0;
+	}
+	ul.social a:hover {
+		text-decoration: none;
+		background-color: @link-hover-color;
+	}
+	
+	.navbar-default {
+		background-color:white;
+	}
+	header[role="banner"] .utility-nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1999;
+	}
+	header[role="banner"] .utility-nav ul{
+		list-style:none;
+	}
+	header[role="banner"] .utility-nav li{
+		float:left;
+	}
+	header[role="banner"] .utility-nav li a{
+		display:inline-block;
+		padding: 8px 12px;
+
+	}
+	header[role="banner"] .utility-nav li a:hover{
+		text-decoration:none;
+	}
+ 	
+	header[role="banner"] .banner-brand {
+padding-top: 40px;
+}
+
+header[role="banner"] .container {
+position: relative;
+}
+
+	.navbar-toggle {
+
+float: left; // edited
+margin-left: @navbar-padding-horizontal; // edited
+}
+	.txtsmall {
+	 font-size:small;
+	}
+
+	footer[role="contentinfo"] {
+		color:white;
+		background-color:gray;
+	}
+	
+	footer[role="contentinfo"] {
+		margin-top:50px;
+			padding-top: 24px;
+			padding-bottom: 24px;
+			font-size:small;
+			background-color: darken(@navbar-inverse-bg, 18%);
+			color: darken(@navbar-inverse-color, 18%);
+	}
+	#trail {
+		outline:9999px solid gray;
+		position:absolute;
+		clip: rect(0,9999px,9999px, 0 )
+	}
+
+
+  </style>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+	<header role="banner">
+		<div class="container">
+			<a class="banner-brand visible-md visible-lg" href="index.html" ><img src="img/logo.png" alt="Bootstrappin'" width="180"></a>
+		</div>
+		
+		<div class="utility-nav">
+			<ul>
+				<li><a href="#" title="Login or Register"><i class="icon fafa-user fa-lg"></i><span>Log In or Register</span></a></li>
+					<li><a href="#" title="View Cart"><i class="icon fafa-shopping-cart fa-lg"></i><span>
+				View Cart</span></a></li>
+			</ul>
+		</div><!-- /.utility-nav -->
+		
+		<nav role="navigation" class="navbar navbar-static-top navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" datatoggle="
+					collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand visible-xs visible-sm" href="#" ><img src="img/logo.png" alt="Bootstrappin'" ></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dolls
+						<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						...
+						</ul>
+					</li><li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pans
+						<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						...
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shoes
+						<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						...
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">All
+					Departments <b class="caret"></b></a>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<main role="main" >
+			<div>
+				<div class="container">
+					<div class="row">
+							<div class="col-md-5">
+								<div>
+								<div id="homepage-feature" class="carousel slide">
+								<ol class="carousel-indicators">
+									<li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
+									<li data-target="#homepage-feature" data-slide-to="1"></li>
+									<li data-target="#homepage-feature" data-slide-to="2"></li>
+									<li data-target="#homepage-feature" data-slide-to="3"></li>
+								</ol>
+							
+								<div class="carousel-inner picsmall">
+									<div class="item active">
+										<img src="img/0.jpg" alt="OKWU Athletics Homepage">
+									</div>
+									<div class="item">
+										<img src="img/1.jpg" alt="OKWU.edu Homepage">
+									</div>
+									<div class="item">
+										<img src="img/2.jpg" alt="Bartlesville Symphony Homepage">
+									</div>
+									<div class="item">
+										<img src="img/3.jpg" alt="aLittleCode.com Homepage">
+									</div>
+								</div>
+								
+								<!-- Controls -->
+								<a class="left carousel-control" href="#homepage-feature" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#homepage-feature" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div><!-- /#homepage-feature.carousel -->
+							</div>
+							<div><h2>container ?</h2>
+							<p>直接row 加col 是依据父元素，container 是依据body？</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+						
+							
+									<div class=""><h2>下拉菜单</h2>
+							<p>angang</p>
+							<p><a href="#" class="btn btn-primary pull-right">Meet the team!<span class="icon fa fa-arrow-circle-right"></span></a></p></div>
+									<div class=""><hr><h2>头部</h2>
+							<p>注册、登陆之类</p>
+							<p><a href="#" class="btn btn-primary pull-right">Meet the team!<span class="icon fa fa-arrow-circle-right"></span></a></p></div>
+									<div class=""><hr>
+									<h2>多级分列</h2>
+								<p>container、row、col</p>
+								<p><a href="#" class="btn btn-primary pull-right">Meet the team!<span class="icon fa fa-arrow-circle-right"></span></a></p>
+								</div>
+						
+						
+						</div>
+						<div class="col-md-3 txtsmall">
+							<h3>底部</h3>
+							<p>不够高填充办法</p>
+							<p><a href="#" class="btn btn-primary pull-right">Meet the team!<span class="icon fa fa-arrow-circle-right"></span></a></p>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div>
+	</main>
+	
+	<footer role="contentinfo">
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-2">
+				<h4>Categories</h4>
+				<ul>
+					<a href="#"><li>link1</li></a>
+					<a href="#"><li>link2</li></a>
+					<a href="#"><li>link3</li></a>
+				</ul>
+			</div>
+			<div class="col-sm-4 col-md-2">
+				<h4>样式</h4>
+				<ul>
+					<li>a</li>
+					<li>b</li>
+					<li>c</li>
+				</ul>
+			</div>
+			<div class="col-sm-4 col-md-2">
+				<h4>其他</h4>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<h4>About Us</h4>
+			</div>
+		</div><!-- /.row -->
+		</div>
+		<p style="text-align:center;margin-top:30px;"><small>Copyright &copy; Ang</small></p>
+		<ul class="social">
+			<li><a href="#" title="Twitter Profile"><span class="icon fa
+			fa-twitter"></span>twitter</a></li>
+			<li><a href="#" title="Facebook Page"><span class="icon fa
+			fa-facebook"></span>facebook</a></li>
+			<li><a href="#" title="LinkedIn Profile"><span class="icon fa
+			fa-linkedin"></span>linkedin</a></li>
+			<li><a href="#" title="Google+ Profile"><span class="icon fa
+			fa-google-plus"></span>google-plus</a></li>
+			<li><a href="#" title="GitHub Profile"><span class="icon fa
+			fa-github-alt"></span>github</a></li>
+		</ul>
+		<p id="trail"></p>
+	</footer>
+	
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script> 
+  
+</body>
+
+</html>
